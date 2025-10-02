@@ -13,7 +13,7 @@ Get-ChildItem *.mkv | ForEach-Object {
         }
 
         # Grab the frame at timestamp = i seconds
-        ffmpeg -ss 00:00:$i -i $_.FullName -frames:v 5 "$out"
+        ffmpeg -ss 00:00:$i -i $_.FullName -frames:v 3 "$out"
     }
 }
 
